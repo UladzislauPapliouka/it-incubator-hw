@@ -1,0 +1,65 @@
+.message {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+
+  .userAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: flex-end;
+  }
+
+  .textBlock {
+    position: relative;
+    min-height: 50px;
+    min-width: 150px;
+    background: rgba(136, 136, 136, 0.4);
+    padding: 8px;
+    border-radius: 4px 4px 4px 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+
+    .messagePointer {
+      bottom: 0;
+      left: -15px;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: rgba(136, 136, 136, 0.4);
+      clip-path: polygon(76% 43%, 100% 3%, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0 94%, 43% 73%);
+    }
+
+    .userName {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      color: #3dad5a;
+    }
+
+    .messageText {
+      color: #383838;
+      hyphens: auto;
+
+      .messageTime {
+        position: absolute;
+        float: right;
+        bottom: 0;
+        right: 5px;
+        color: #7a7a7a;
+        width: 40px;
+        height: 25px;
+      }
+
+      .messageTimeMask {
+        float: right;
+        bottom: 0;
+        right: 5px;
+        width: 40px;
+        height: 25px;
+      }
+    }
+  }
+}
