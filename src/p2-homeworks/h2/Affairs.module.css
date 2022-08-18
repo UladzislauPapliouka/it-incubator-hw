@@ -14,15 +14,15 @@
 }
 
 .high {
-    background: #dc6060;
+    background: #dc6060 !important;
 }
 
 .middle {
-    background: #d5d55c;
+    background: #d5d55c !important;
 }
 
 .low {
-    background: #59c059;
+    background: #59c059 !important;
 }
 
 .button {
