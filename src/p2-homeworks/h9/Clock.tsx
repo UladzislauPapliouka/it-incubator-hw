@@ -54,7 +54,7 @@ function Clock() {
                         :
                         ${date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds()}
     `
-    const stringDate = `${date.getFullYear()} ${monthes[date.getMonth()]} ${date.getDate()}`
+    const stringDate = `${date.getFullYear()} ${monthes[date.getMonth()]} ${date.getDate()} ${days[date.getDay()]}`
 
     return (
         <div>
